@@ -1,0 +1,81 @@
+<!Doctype Html>
+<html>
+<head>
+<title>Task1</title>
+<style>
+.dis {
+	width: 150px;
+	border: 3px inset black;
+	position: absolute;
+	text-align: center;
+	margin: 50px;
+}
+.font {
+	text-align: center;
+	font-size: 50px;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+</style>
+</head>
+<body>
+<img src="http://region2.tesda.gov.ph/wp-content/uploads/2016/09/tesda-300x300.png" width="70" height="70" align="left"><h1 class="font">Task</h1>
+<hr>
+<script>
+function showDiv1() {
+	document.getElementById('1').style.display = "inline-block";
+	document.getElementById('4').style.display = "none";
+	document.getElementById('3').style.display = "none";
+	document.getElementById('2').style.display = "none";
+}
+function showDiv2() {
+	document.getElementById('2').style.display = "inline-block";
+	document.getElementById('1').style.display = "none";
+	document.getElementById('4').style.display = "none";
+	document.getElementById('3').style.display = "none";
+}
+function showDiv3() {
+	document.getElementById('3').style.display = "inline-block";
+	document.getElementById('1').style.display = "none";
+	document.getElementById('2').style.display = "none";
+	document.getElementById('4').style.display = "none";
+}
+function showDiv4() {
+	document.getElementById('4').style.display = "inline-block";
+	document.getElementById('1').style.display = "none";
+	document.getElementById('2').style.display = "none";
+	document.getElementById('3').style.display = "none";
+}
+</script>
+<center>
+<br>
+<div class="box">
+<input type="button"  value="Click Me!" onclick="showDiv1()"/>
+<div id="1" style="display:none">
+<div class="box">
+<div class="dis">WELCOME</div></div>
+</div>
+<input type="button" value="Click Me!!" onclick="showDiv2()"/>
+<div id="2" style="display:none">
+<div class="box">
+<div class="dis">WELCOME</div></div>
+</div>
+<input type="button" value="Click Me!!!" onclick="showDiv3()"/>
+<div id="3" style="display:none">
+<div class="box">
+<div class="dis">WELCOME</div></div>
+</div>
+<input type="button" value="Click Me!!!!" onclick="showDiv4()"/>
+<div id="4" style="display:none">
+<div class="box">
+<div class="dis">WELCOME</div></div>
+</div>
+</div>
+</center>
+</body>
+</html>
+
+
